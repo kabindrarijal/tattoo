@@ -1,0 +1,10 @@
+{%extends 'mainframe.html'%}
+{%block content%}<!--block content means inheritence of a parent code where content is a variable-->
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <h1>details</h1>
+  <p>  {{object.title}}  </p>
+
+   <p> {%if object.description%}{{object.description}}{%else%}Description is comming soon{%endif%}</p>
+<p>this is about us</p>
+    {%endblock%}

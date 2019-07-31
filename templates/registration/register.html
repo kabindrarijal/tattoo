@@ -1,0 +1,23 @@
+{%extends 'mainframe.html'%}
+{%load crispy_forms_tags %}
+{%block content%} <!--block content means inheritence of a parent code where content is a variable-->
+<h1>register</h1>
+    <h2>create an account</h2>
+<form  method="POST">
+    {%csrf_token%}
+    <fieldset class="form-group">
+        <legend class="border-bottom mb-4">
+            do here
+        </legend>
+
+        </fieldset>
+    {{form|crispy}}
+    <button class="btn btn-dark" type="submit">submit</button>
+</form>
+<div class="border-top pt-3">
+    <small class="text-muted">
+        Already Have an Account?
+        <a href="#" class="ml-2">sign in</a>
+    </small>
+</div>
+{%endblock%}

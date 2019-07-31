@@ -1,0 +1,10 @@
+{%extends 'mainframe.html'%}
+{%block content%} <!--block content means inheritence of a parent code where content is a variable-->
+<h1>login</h1>
+    <h2>create an account</h2>
+<form action="" method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="sign up">
+</form>
+{%endblock%}
